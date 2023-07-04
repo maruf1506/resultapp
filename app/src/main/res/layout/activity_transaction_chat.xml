@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".View.transaction_chat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center|left"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/sidebar_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:onClick="onBackPressed"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_arrow">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transaction_chat_recycle"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/transaction_chat_row"
+            android:layout_above="@+id/bottom_button"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/bottom_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transaction_debit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/debitbutton"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/debit_card"
+                android:fontFamily="@font/bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/transaction_credit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="@string/creditbutton"
+                android:gravity="center"
+                android:background="@drawable/cradit_card"
+                android:fontFamily="@font/bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Udhar Book</string>
+
+    <string name="nav_qrcode">Card Making</string>
+    <string name="nav_help">Help &amp; Support</string>
+    <string name="nav_share">Share This App</string>
+    <string name="nav_logout">Log Out</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_customer">Transaction</string>
+    <string name="nav_transaction">History</string>
+
+
+    <string name="redirecticon">Redirect Circle Icon</string>
+    <string name="rightarrow">Right Arrow Icon</string>
+
+    <string name="formdashboardheading">8849364239</string>
+    <string name="formdashboardplaceholder1">Name</string>
+    <string name="formdashboardvalidation1">Only whitespace and character</string>
+    <string name="formdashboardplaceholder2">Business Name</string>
+    <string name="formdashboardvalidation2"></string>
+    <string name="formdashboardplaceholder3">Location</string>
+    <string name="formdashboardvalidation3">Only whitespace and character</string>
+    <string name="editbutton">Save</string>
+    <string name="editformdashboardheading">Update Details</string>
+
+    <string name="homedashboardstatusbar">Account Summary</string>
+    <string name="homedashboardparagraph1">Net Balance</string>
+    <string name="netbalance">-17000</string>
+    <string name="debitbalance">-34000</string>
+    <string name="debitbalancetext">Debit</string>
+    <string name="creditbalance">+17000</string>
+    <string name="creditbalancetext">Credit</string>
+    <string name="homedashboardparagraph2">Till Last Transaction</string>
+    <string name="homedashboardparagraph3">All Transactions</string>
+    <string name="homedashboardparagraph4">SEE ALL</string>
+
+    <string name="selectcustomerdashboardstatusbar">Select Transaction</string>
+    <string name="selectcustomerdashboardheading">Add Transaction</string>
+    <string name="selectcustomerdashboardparagraph1">All Transaction</string>
+
+    <string name="transactionlistdashboardstatusbar">Transaction History</string>
+    <string-array name="numbers">
+        <item>All Transactions </item>
+        <item>Credit Transactions</item>
+        <item>Debit Transactions</item>
+    </string-array>
+
+    <string name="debitbutton">- You Gave</string>
+    <string name="creditbutton">+ You Got</string>
+
+
+    <string name="qrdashboardstatusbar">Card Making</string>
+
+
+</resources>

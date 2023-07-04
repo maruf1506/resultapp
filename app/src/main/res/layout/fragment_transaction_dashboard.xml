@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_centerVertical="true"
+               android:gravity="center|left">
+               <TextView
+                   android:id="@+id/homedashboardparagraph1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Select History"
+                   android:fontFamily="@font/regular"
+                   android:textColor="@color/black"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+               <Spinner
+                   android:id="@+id/spinner1"
+                   android:layout_below="@+id/homedashboardparagraph1"
+                   android:layout_width="wrap_content"
+                   style="@style/spinner_text"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/download_button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="25dp"
+                   android:layout_marginBottom="5dp"
+                   android:src="@drawable/download_icon"/>
+               <TextView
+                   android:id="@+id/homedashboardparagraph2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Create PDF"
+                   android:fontFamily="@font/regular"
+                   android:textColor="@color/black"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+           </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:text="No Data Found"
+            android:fontFamily="@font/regular"
+            android:drawableTop="@drawable/ic_baseline_info"
+            android:drawablePadding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:id="@+id/prog"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transactionrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/transaction_row"
+            android:fitsSystemWindows="true"/>
+    </RelativeLayout>
+</LinearLayout>

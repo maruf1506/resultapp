@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="transaction_summary"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/transction1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/customername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/customer_image"
+            android:fontFamily="@font/bold"
+            android:maxWidth="140dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/customerphonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customername"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/customer_image"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:text="@string/debitbalance"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/transactionamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/transactionamountsymbol"
+            android:fontFamily="@font/bold"
+            android:text="@string/app_name"
+            android:textColor="@color/sucess"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/transactionamountsymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/bold"
+            android:text="$"
+            android:textColor="@color/sucess"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+        <TextView
+            android:id="@+id/transactiondate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transactionamount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:text="@string/app_name"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/customer_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="7dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:background="@drawable/circle_bg4"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
